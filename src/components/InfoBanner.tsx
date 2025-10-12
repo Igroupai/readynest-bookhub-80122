@@ -4,13 +4,13 @@ export const InfoBanner = () => {
   const features = [
     {
       icon: BookOpen,
-      title: "Sin stock",
-      description: "Cada libro se imprime cuando lo pides",
+      title: "Sin inversión inicial",
+      description: "Nuevos autores publican sin costos desproporcionados",
     },
     {
       icon: Leaf,
-      title: "Sin desperdicio",
-      description: "Publicación sostenible y responsable",
+      title: "Menor huella de carbono",
+      description: "Impresión bajo demanda que cuida el planeta",
     },
     {
       icon: Users,
@@ -24,10 +24,10 @@ export const InfoBanner = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Publicar distinto.
+            Publicar distinto, cuidando el planeta.
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Solo historias reales, impresas bajo demanda.
+            Impresión bajo demanda: menor huella de carbono, mayor oportunidad para nuevos autores.
           </p>
         </div>
         

@@ -25,11 +25,13 @@ export const FinalCTA = () => {
                 Para Lectores
               </h3>
               <p className="text-muted-foreground mb-6">
-                Descubre historias auténticas de autores independientes chilenos. 
-                Cada compra apoya directamente a los creadores.
+                Explora más de 35.000 títulos en nuestro catálogo general. 
+                Historias de editoriales independientes y grandes casas editoriales.
               </p>
-              <Button variant="default" size="lg" className="w-full">
-                Explorar todo el catálogo
+              <Button variant="default" size="lg" className="w-full" asChild>
+                <a href="https://webook.cl/" target="_blank" rel="noopener noreferrer">
+                  Explorar todo el catálogo
+                </a>
               </Button>
             </div>
             
@@ -42,11 +44,13 @@ export const FinalCTA = () => {
                 Para Autores
               </h3>
               <p className="text-muted-foreground mb-6">
-                Publica tu libro sin riesgos. Sin inversión inicial, sin stock, 
-                sin intermediarios. Solo tu historia y tus lectores.
+                Publica tu libro sin inversión inicial desproporcionada. 
+                Sin stock, sin intermediarios, con menor huella de carbono.
               </p>
-              <Button variant="hero" size="lg" className="w-full">
-                Publica con nosotros
+              <Button variant="hero" size="lg" className="w-full" asChild>
+                <a href="https://webook.cl/pages/publica-con-nosotros" target="_blank" rel="noopener noreferrer">
+                  Publica con nosotros
+                </a>
               </Button>
             </div>
           </div>

@@ -26,7 +26,7 @@ export const Hero = () => {
             Historias que se imprimen bajo demanda.
           </p>
           <p className="text-base md:text-lg text-white/80 mb-8 max-w-2xl">
-            Descubre libros únicos, creados por autores independientes. 25% de descuento por tiempo limitado.
+            Descubre libros únicos creados por autores independientes. Impresión bajo demanda que cuida el planeta y permite a nuevos autores hacer realidad su sueño de publicar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 

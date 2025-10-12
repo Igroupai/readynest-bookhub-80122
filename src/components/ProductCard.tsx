@@ -7,7 +7,6 @@ interface ProductCardProps {
   author: string;
   description: string;
   price: string;
-  discountedPrice: string;
   image: string;
   shopifyUrl: string;
 }
@@ -17,17 +16,11 @@ export const ProductCard = ({
   author,
   description,
   price,
-  discountedPrice,
   image,
   shopifyUrl,
 }: ProductCardProps) => {
   return (
     <div className="group relative bg-card rounded-lg shadow-card hover:shadow-card-hover transition-smooth overflow-hidden">
-      {/* Discount Badge */}
-      <Badge className="absolute top-3 right-3 z-10 bg-coral text-coral-foreground font-bold">
-        -25%
-      </Badge>
-      
       {/* Image */}
       <div className="aspect-[3/4] overflow-hidden bg-muted">
         <img
@@ -53,9 +46,6 @@ export const ProductCard = ({
         {/* Pricing */}
         <div className="flex items-baseline gap-2 mb-4">
           <span className="text-2xl font-bold text-coral">
-            {discountedPrice}
-          </span>
-          <span className="text-sm text-muted-foreground line-through">
             {price}
           </span>
         </div>
