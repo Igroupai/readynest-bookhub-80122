@@ -48,7 +48,7 @@ export const FinalCTA = () => {
                 Sin stock, sin intermediarios, con menor huella de carbono.
               </p>
               <Button variant="hero" size="lg" className="w-full" asChild>
-                <a href="https://webook.cl/pages/publica-con-nosotros" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:marketing@webook.cl">
                   Publica con nosotros
                 </a>
               </Button>

@@ -18,9 +18,7 @@ export const Header = () => {
             Catálogo general
           </a>
           <a 
-            href="https://webook.cl/pages/publica-con-nosotros" 
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:marketing@webook.cl"
             className="text-sm font-medium text-foreground hover:text-primary transition-smooth"
           >
             Publica con WeBook

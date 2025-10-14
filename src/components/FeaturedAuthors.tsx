@@ -35,12 +35,12 @@ export const FeaturedAuthors = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 text-accent mb-4">
             <Quote className="h-8 w-8" />
-            <span className="text-sm font-semibold uppercase tracking-wider">Autores WeBook</span>
+            <span className="text-sm font-semibold uppercase tracking-wider text-foreground">Autores WeBook</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Conoce a Nuestros Autores
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
             Más de 180 autores independientes han logrado su sueño de publicar con WeBook
           </p>
         </div>
@@ -53,7 +53,7 @@ export const FeaturedAuthors = () => {
             >
               <h3 className="text-xl font-bold text-foreground mb-2">{author.name}</h3>
               <p className="text-sm text-accent mb-3">{author.description}</p>
-              <p className="text-sm text-muted-foreground italic mb-4">"{author.quote}"</p>
+              <p className="text-sm text-foreground/70 italic mb-4">"{author.quote}"</p>
               <a
                 href={author.link}
                 target="_blank"

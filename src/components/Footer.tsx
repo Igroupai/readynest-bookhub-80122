@@ -15,7 +15,7 @@ export const Footer = () => {
             </div>
             <p className="text-sm text-primary-foreground/80">
               Plataforma chilena de publicación bajo demanda. 
-              Parte del ecosistema WeCyberBook 2025.
+              webook.cl
             </p>
           </div>
           
