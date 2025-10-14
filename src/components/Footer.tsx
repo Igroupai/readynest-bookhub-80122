@@ -1,4 +1,4 @@
-import { BookOpen, Mail, Instagram, Facebook } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,40 +24,58 @@ export const Footer = () => {
             <h3 className="font-semibold mb-4">Navegación</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#productos" className="text-primary-foreground/80 hover:text-accent transition-smooth">
-                  Catálogo
+                <a 
+                  href="https://webook.cl/collections/autoediciones-weprint"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent transition-smooth"
+                >
+                  Catálogo Autoediciones
                 </a>
               </li>
               <li>
-                <a href="#publicar" className="text-primary-foreground/80 hover:text-accent transition-smooth">
+                <a 
+                  href="https://webook.cl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent transition-smooth"
+                >
+                  Catálogo General
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://webook.cl/pages/publica-con-nosotros"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent transition-smooth"
+                >
                   Publica tu libro
                 </a>
               </li>
               <li>
-                <a href="#autores" className="text-primary-foreground/80 hover:text-accent transition-smooth">
+                <a 
+                  href="https://webook.cl/blogs/autores-webook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent transition-smooth"
+                >
                   Autores
                 </a>
               </li>
             </ul>
           </div>
           
-          {/* Soporte */}
+          {/* Contacto */}
           <div>
-            <h3 className="font-semibold mb-4">Soporte</h3>
+            <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#faq" className="text-primary-foreground/80 hover:text-accent transition-smooth">
-                  Preguntas frecuentes
-                </a>
-              </li>
-              <li>
-                <a href="#contacto" className="text-primary-foreground/80 hover:text-accent transition-smooth">
-                  Contacto
-                </a>
-              </li>
-              <li>
-                <a href="#terminos" className="text-primary-foreground/80 hover:text-accent transition-smooth">
-                  Términos y condiciones
+                <a 
+                  href="mailto:marketing@webook.cl"
+                  className="text-primary-foreground/80 hover:text-accent transition-smooth"
+                >
+                  marketing@webook.cl
                 </a>
               </li>
             </ul>
@@ -66,29 +84,17 @@ export const Footer = () => {
           {/* Redes Sociales */}
           <div>
             <h3 className="font-semibold mb-4">Síguenos</h3>
-            <div className="flex gap-4">
-              <a 
-                href="#" 
-                className="text-primary-foreground/80 hover:text-accent transition-smooth"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a 
-                href="#" 
-                className="text-primary-foreground/80 hover:text-accent transition-smooth"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a 
-                href="#" 
-                className="text-primary-foreground/80 hover:text-accent transition-smooth"
-                aria-label="Email"
-              >
-                <Mail className="h-6 w-6" />
-              </a>
-            </div>
+            <p className="text-sm text-primary-foreground/80 mb-4">
+              Visita nuestro sitio principal para más información
+            </p>
+            <a 
+              href="https://webook.cl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-sm font-medium text-accent hover:text-accent/80 transition-smooth"
+            >
+              www.webook.cl →
+            </a>
           </div>
         </div>
         

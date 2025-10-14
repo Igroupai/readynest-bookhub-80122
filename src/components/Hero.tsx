@@ -19,13 +19,13 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             Autoediciones WeBook 💚
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium">
+          <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
             Historias que se imprimen bajo demanda.
           </p>
-          <p className="text-base md:text-lg text-white/80 mb-8 max-w-2xl">
+          <p className="text-base md:text-lg text-white/80 mb-8 max-w-2xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
             Descubre libros únicos creados por autores independientes. Impresión bajo demanda que cuida el planeta y permite a nuevos autores hacer realidad su sueño de publicar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
