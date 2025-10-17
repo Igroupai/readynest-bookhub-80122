@@ -111,10 +111,22 @@ export const ProductGrid = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {realProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
+        </div>
+        
+        <div className="text-center">
+          <a
+            href="https://webook.cl/collections/autoediciones-weprint"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center h-14 rounded-lg px-10 text-base font-semibold text-white transition-smooth hover:opacity-90 shadow-card"
+            style={{ backgroundColor: 'hsl(142, 76%, 36%)' }}
+          >
+            Explorar más libros
+          </a>
         </div>
       </div>
     </section>
