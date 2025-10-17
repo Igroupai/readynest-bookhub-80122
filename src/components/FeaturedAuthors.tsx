@@ -33,8 +33,8 @@ export const FeaturedAuthors = () => {
     <section className="py-20 bg-background" id="autores">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 text-accent mb-4">
-            <Quote className="h-8 w-8" />
+          <div className="inline-flex items-center gap-2 mb-4">
+            <Quote className="h-8 w-8" style={{ color: 'hsl(142, 76%, 36%)' }} />
             <span className="text-sm font-semibold uppercase tracking-wider text-foreground">Autores WeBook</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -58,7 +58,10 @@ export const FeaturedAuthors = () => {
                 href={author.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-primary hover:text-accent transition-smooth font-medium"
+                className="text-sm font-medium transition-smooth"
+                style={{ color: 'hsl(196, 100%, 22%)' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'hsl(142, 76%, 36%)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'hsl(196, 100%, 22%)'}
               >
                 Ver perfil →
               </a>

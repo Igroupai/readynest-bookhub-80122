@@ -48,8 +48,8 @@ export const InfoBanner = () => {
               key={index}
               className="text-center space-y-4 p-6 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 transition-smooth hover:bg-white/15"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 text-accent">
-                <feature.icon className="h-8 w-8" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full" style={{ backgroundColor: 'hsl(142, 76%, 36%, 0.2)' }}>
+                <feature.icon className="h-8 w-8" style={{ color: 'hsl(142, 76%, 36%)' }} />
               </div>
               <h3 className="text-xl font-semibold text-white">
                 {feature.title}

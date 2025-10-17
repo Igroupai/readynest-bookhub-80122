@@ -36,9 +36,14 @@ export const FinalCTA = () => {
             </div>
             
             {/* Para Autores */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20 hover:border-accent/40 transition-smooth">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent mb-6 group-hover:scale-110 transition-smooth">
-                <PenTool className="h-7 w-7" />
+            <div className="group p-8 rounded-2xl border transition-smooth" style={{ 
+              background: 'linear-gradient(to bottom right, hsl(142, 76%, 36%, 0.05), hsl(142, 76%, 36%, 0.1))',
+              borderColor: 'hsl(142, 76%, 36%, 0.2)'
+            }}>
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full mb-6 group-hover:scale-110 transition-smooth" style={{
+                backgroundColor: 'hsl(142, 76%, 36%, 0.1)'
+              }}>
+                <PenTool className="h-7 w-7" style={{ color: 'hsl(142, 76%, 36%)' }} />
               </div>
               <h3 className="text-2xl font-bold mb-3 text-foreground">
                 Para Autores

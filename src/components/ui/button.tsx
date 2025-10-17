@@ -19,7 +19,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         coral: "bg-coral text-coral-foreground hover:bg-coral/90 shadow-card font-semibold",
-        hero: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-editorial font-semibold",
+        hero: "text-white hover:opacity-90 shadow-editorial font-semibold" + " " + "transition-smooth",
+        webook: "text-white hover:opacity-90 shadow-card font-semibold" + " " + "transition-smooth",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -45,9 +46,16 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
+    
+    // Apply WeBook green color for hero and webook variants
+    const style = (variant === 'hero' || variant === 'webook') 
+      ? { backgroundColor: 'hsl(142, 76%, 36%)' }
+      : undefined;
+    
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
+        style={style}
         ref={ref}
         {...props}
       />
