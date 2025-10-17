@@ -4,13 +4,13 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="py-12" style={{ backgroundColor: 'hsl(196, 100%, 22%)', color: 'hsl(0, 0%, 100%)' }}>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <BookOpen className="h-8 w-8 text-accent" />
+              <BookOpen className="h-8 w-8" style={{ color: 'hsl(142, 76%, 36%)' }} />
               <span className="text-xl font-bold">WeBook</span>
             </div>
             <p className="text-sm text-primary-foreground/80">

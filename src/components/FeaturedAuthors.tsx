@@ -52,7 +52,7 @@ export const FeaturedAuthors = () => {
               className="bg-card rounded-lg p-6 shadow-lg border border-border hover:shadow-xl transition-shadow"
             >
               <h3 className="text-xl font-bold text-foreground mb-2">{author.name}</h3>
-              <p className="text-sm text-accent mb-3">{author.description}</p>
+              <p className="text-sm text-foreground/90 mb-3 font-medium">{author.description}</p>
               <p className="text-sm text-foreground/70 italic mb-4">"{author.quote}"</p>
               <a
                 href={author.link}
