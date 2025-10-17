@@ -17,9 +17,14 @@ export const FinalCTA = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             {/* Para Lectores */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 hover:border-primary/40 transition-smooth">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-6 group-hover:scale-110 transition-smooth">
-                <BookOpen className="h-7 w-7" />
+            <div className="group p-8 rounded-2xl border transition-smooth" style={{ 
+              background: 'linear-gradient(to bottom right, hsl(196, 100%, 22%, 0.05), hsl(196, 100%, 22%, 0.1))',
+              borderColor: 'hsl(196, 100%, 22%, 0.2)'
+            }}>
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full mb-6 group-hover:scale-110 transition-smooth" style={{
+                backgroundColor: 'hsl(196, 100%, 22%, 0.1)'
+              }}>
+                <BookOpen className="h-7 w-7" style={{ color: 'hsl(196, 100%, 22%)' }} />
               </div>
               <h3 className="text-2xl font-bold mb-3 text-foreground">
                 Para Lectores
@@ -28,8 +33,8 @@ export const FinalCTA = () => {
                 Explora más de 35.000 títulos en nuestro catálogo general. 
                 Historias de editoriales independientes y grandes casas editoriales.
               </p>
-              <Button variant="default" size="lg" className="w-full" asChild>
-                <a href="https://webook.cl/" target="_blank" rel="noopener noreferrer">
+              <Button variant="webook" size="lg" className="w-full" asChild>
+                <a href="https://webook.cl/" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: 'hsl(196, 100%, 22%)' }}>
                   Explorar todo el catálogo
                 </a>
               </Button>
